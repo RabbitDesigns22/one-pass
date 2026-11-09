@@ -6,6 +6,18 @@
 
 `one-pass` removes those loops without lowering quality, and without ever skipping a safety step.
 
+## See the difference
+
+> **You:** Make the 1080x1350 post for the cleaning company.
+
+**Without the skill:** it designs at the wrong size, you send it back, it re-reads the same files, retries a failing export four times and redoes the post.
+
+**With the skill:** it writes a 5-line acceptance list first (size, text, logo, colors, file), checks the finished file against that list and delivers once.
+
+**Skip it if** the task is one line. The skill tells the agent to skip its own method on trivial tasks.
+
+**Status:** in daily use in the author's own setup. Plain instructions, no scripts, no network calls. MIT. Issues and suggestions welcome.
+
 ## What it does
 
 | Leak | How one-pass stops it |
@@ -62,6 +74,30 @@ evals/
 **Hazlo bien a la primera, para no pagar dos veces el mismo trabajo.** `one-pass` es una skill para Claude Code. Su objetivo no es solo hablar menos: es evitar lo que más tokens gasta, que es rehacer el trabajo. Antes de empezar fija una lista corta de lo que tiene que cumplir el resultado. Lee cada cosa una sola vez, agrupa las acciones y se revisa antes de entregar. Además, pone un tope a los reintentos y escribe órdenes completas para otros agentes. Nunca se salta una revisión ni un paso de seguridad para ahorrar.
 
 Instalar: `npx skills add RabbitDesigns22/one-pass`
+
+## More skills from the same setup
+
+These come from one real workflow: a small agency run with 15+ Claude Code sessions in parallel. Each skill fixes one problem that kept happening there.
+
+| Skill | What it fixes |
+|---|---|
+| [hora-exacta](https://github.com/RabbitDesigns22/hora-exacta) | real date and time in every message, so nothing lands on the wrong day |
+| [hands-on](https://github.com/RabbitDesigns22/hands-on) | the agent does what it can and only asks you for codes, keys and payments |
+| [easy-for-them](https://github.com/RabbitDesigns22/easy-for-them) | steps people actually follow: direct link, one action per line |
+| [one-answer](https://github.com/RabbitDesigns22/one-answer) | one thought-through answer instead of plan, fix, new plan |
+| [never-twice](https://github.com/RabbitDesigns22/never-twice) | a shared error log so no session repeats a known mistake |
+| [report-now](https://github.com/RabbitDesigns22/report-now) | status checked live this minute, stamped with the time |
+| [sort-me-out](https://github.com/RabbitDesigns22/sort-me-out) | one ordered list of what is urgent, waiting and forgotten |
+| [in-the-loop](https://github.com/RabbitDesigns22/in-the-loop) | a live board so parallel sessions know what the others changed |
+| [study-first](https://github.com/RabbitDesigns22/study-first) | reads everything in full and answers point by point, no invented details |
+| [session-watchdog](https://github.com/RabbitDesigns22/session-watchdog) | wakes the sessions that got stuck mid-task, leaves the rest alone |
+| [skill-harvest](https://github.com/RabbitDesigns22/skill-harvest) | reads your sessions and finds the skills you are missing |
+| [small-budget-ads](https://github.com/RabbitDesigns22/small-budget-ads) | Meta Ads rules for 1-5 USD a day ad sets |
+| [whatsapp-closer](https://github.com/RabbitDesigns22/whatsapp-closer) | evidence-ranked rules for a WhatsApp sales assistant that closes |
+| [whatsapp-number-onboarding](https://github.com/RabbitDesigns22/whatsapp-number-onboarding) | connect a number to the WhatsApp Cloud API in the safe order |
+| [proposal-pdf](https://github.com/RabbitDesigns22/proposal-pdf) | short PDF proposals with every price checked against its source |
+
+If one of them saved you a redo, a star helps other people find it.
 
 ## License
 
