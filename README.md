@@ -40,7 +40,7 @@ It also includes:
 With the [skills CLI](https://skills.sh):
 
 ```bash
-npx skills add RabbitDesigns22/one-pass
+npx skills@1.8.1 add https://github.com/RabbitDesigns22/one-pass/tree/d6926dcb72618daa5016f6ab2c9a7b3a8e848ad6
 ```
 
 Or manually: copy `skills/one-pass/` into `~/.claude/skills/` for all your projects, or into `.claude/skills/` for one project.
@@ -73,7 +73,7 @@ evals/
 
 **Hazlo bien a la primera, para no pagar dos veces el mismo trabajo.** `one-pass` es una skill para Claude Code. Su objetivo no es solo hablar menos: es evitar lo que más tokens gasta, que es rehacer el trabajo. Antes de empezar fija una lista corta de lo que tiene que cumplir el resultado. Lee cada cosa una sola vez, agrupa las acciones y se revisa antes de entregar. Además, pone un tope a los reintentos y escribe órdenes completas para otros agentes. Nunca se salta una revisión ni un paso de seguridad para ahorrar.
 
-Instalar: `npx skills add RabbitDesigns22/one-pass`
+Instalar: `npx skills@1.8.1 add https://github.com/RabbitDesigns22/one-pass/tree/d6926dcb72618daa5016f6ab2c9a7b3a8e848ad6`
 
 ## More skills from the same setup
 
